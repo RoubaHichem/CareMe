@@ -1,0 +1,640 @@
+
+
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#111;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    color:var(--black);
+    font-size: 30px;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border:var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color:var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.btn span{
+    padding:.7rem 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color:#fff;
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    color:#fff;
+}
+
+.btn:hover span{
+    color: var(--green);
+    background:#fff;
+    margin-left: 1rem;
+}
+
+.header{
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: #16a085;
+}
+
+.header .logo i{
+    color: #c0392b;
+}
+
+.header .nav a{
+    
+    margin:0 1rem;
+    font-size: 1.5rem;
+    color:var(--black);
+    font-weight: 600;
+ }
+ 
+ .header .nav a:hover{
+    color:#16a085;
+ }
+
+ #menu-btn{
+    font-size: 2.5rem;
+    color:var(--black);
+    cursor: pointer;
+    display: none;
+ }
+  
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 15rem;
+}
+
+.home .image{
+    flex:1 1 45rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex:1 1 45rem;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color:var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+
+.home .content p{
+    font-size: 2rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------------------- */
+
+/* -------about--------------- */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 85%;
+}
+
+
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content p{
+    color:black;
+    padding:1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* ------------------------RENDEZ-VOUS------------------------------------ */
+
+.appointment{
+    
+    background-color: #16a085;
+    
+}
+.appointment .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3rem;
+   
+   
+}
+.rendez{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    color:white;
+    font-size: 35px;
+    letter-spacing: .4rem;
+}
+
+.appointment .row form{
+  flex:12 12rem;
+  border: 1px solid #0edd06;
+  border-radius: 7px;
+  width: 100px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+  
+#form-patient h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    text-shadow: 2px 2px 2px #ccc;
+    color:var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+  
+#form-patient label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.input-field {
+    max-width: 600px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    
+  }
+  
+  .input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.5rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+
+  
+#form-patient button[type="button"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #16a085;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+  
+  #form-patient button[type="button"]:hover {
+    background-color: #38a;
+}
+  
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50.25%; /* Ratio 16:9 pour le conteneur de la carte */
+    margin-left: 25px;
+  }
+
+  /* La carte Google Maps en elle-même */
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+  }
+#form-rendezvous {
+  display: none;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#form-patient h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  text-shadow: 2px 2px 2px #ccc;
+}
+
+#form-patient label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    
+}
+
+#form-patient input[type="date"],
+#form-patient input[type="time"],
+#form-patient select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#form-patient button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-left: 22rem;
+  margin-bottom: 5px;
+  background-color: #16a085;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#form-patient button[type="submit"]:hover {
+  background-color: #38a;
+}
+
+#form-patient button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+.radio-group {
+    display: inline-flex;
+    gap: 10px;
+    margin: 10px 0;
+    padding-left: 20rem;
+}
+
+/* ------------------------------------------- */
+
+
+/* -------Pharmacie--------------------------- */
+
+.pharmacie .row{
+   
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3rem;
+   
+}
+.pharmacie .row .image{
+    flex:1 1 45rem;
+}
+
+.pharmacie .row .image img{
+    width: 90%;
+}
+
+.pharmacie .row form{
+    flex:12 12rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+
+   
+}
+#pharmacy-form h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #333;
+    text-shadow: 2px 2px 2px #ccc;
+    color:var(--black);
+    line-height: 1.8;
+    
+}
+#pharmacy-form h1{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #16a085;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#pharmacy-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+.pharmacie-select {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    width: 500px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+  
+.pharmacie-select:focus {
+    outline: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+  
+.pharmacie-select option {
+    font-size: 16px;
+    font-weight: normal;
+    color: #555;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+}
+  
+.pharmacie-select option:first-child {
+    font-weight: bold;
+}
+  
+  
+select, input[type="file"] {
+    width: 100%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+  
+button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-left: 22rem;
+  margin-bottom: 5px;
+  background-color: #16a085;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+  
+button[type="submit"]:hover {
+    background-color: #38a;
+}
+
+
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="email"]:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+  }
+  
+
+
+/* ------------------------------------------- */
+
+/* ------------------Laboratoire--------------------------- */
+
+.Laboratoire{
+    
+    background-color: #16a085;
+    
+}
+.Laboratoire .row{
+   
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3rem;
+   
+}
+.Laboratoire .row .image{
+    flex:1 1 45rem;
+}
+
+.Laboratoire .row .image img{
+    width: 90%;
+}
+
+.Laboratoire .row form{
+    flex:12 12rem;
+    border: 1px solid #1cf000;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    
+
+}
+#Laboratoire-form h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #333;
+    text-shadow: 2px 2px 2px #ccc;
+    color:var(--black);
+    line-height: 1.8;
+   
+}
+#Laboratoire-form h1{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #16a085;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#Laboratoire-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+ select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-left: 22rem;
+  margin-bottom: 5px;
+  background-color: #16a085;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+  
+ button[type="submit"]:hover {
+    background-color: #38a;
+  }
+
+
+
+/* ------------------------------------------- */
